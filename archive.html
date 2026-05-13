@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>归档 | 刘春松</title>
+  <meta name="description" content="归档页面，用网格卡片展示站点中的视频与后续可继续沉淀的内容。">
+  <link rel="stylesheet" href="./static/css/style.css">
+</head>
+<body>
+  <div id="ie-tip-anchor"></div>
+
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="./index.html">
+        <span class="brand-mark"></span>
+        <span class="brand-text">
+          <strong>Liu Chunsong</strong>
+          <em>Archive Vault</em>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="切换导航">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav">
+        <a href="./index.html">首页</a>
+        <a href="./about.html">关于</a>
+        <a href="./works.html">作品</a>
+        <a href="./links.html">链接</a>
+        <a href="./navigation.html">导航</a>
+        <a href="./contact.html">联系</a>
+        <a href="./archive.html">归档</a>
+        <a href="./guestbook.html">留言板</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="page-hero-copy" data-reveal>
+          <p class="eyebrow">Archive Grid</p>
+          <h1>归档页面</h1>
+          <p>
+            这里用于沉淀视频、过程记录和后续可继续扩展的素材。
+            当前先把你给的视频按网格卡片方式展示，后面继续加更多归档内容也会很顺手。
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="./contact.html">回到联系页</a>
+            <a class="btn btn-secondary" href="./navigation.html">查看导航页</a>
+          </div>
+        </div>
+
+        <div class="page-hero-panel info-card" data-reveal>
+          <span class="card-tag">Archive Summary</span>
+          <h2>当前归档内容</h2>
+          <ul class="list-clean list-spaced">
+            <li>视频素材展示</li>
+            <li>网格卡片布局</li>
+            <li>便于后续继续追加更多归档项</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section-block">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Video Archive</p>
+          <h2>视频归档</h2>
+          <p>用一格一格的展示方式放入当前视频，后续可以继续往这个区域追加更多内容卡片。</p>
+        </div>
+
+        <div class="archive-grid">
+          <article class="archive-card" data-reveal>
+            <span class="card-tag">Video 2025</span>
+            <h3>归档视频 01</h3>
+            <p>当前项目中的本地视频素材，保留在独立卡片中展示，既可在线播放，也可以单独打开查看。</p>
+            <div class="archive-media">
+              <video controls preload="metadata" playsinline>
+                <source src="./static/video/2025/0dbdfcbf33422a1bd0c9d43dc0e6b0bb.mp4" type="video/mp4">
+                当前浏览器不支持视频播放，请尝试升级到现代浏览器。
+              </video>
+            </div>
+            <div class="card-actions">
+              <a class="btn btn-primary" href="./static/video/2025/0dbdfcbf33422a1bd0c9d43dc0e6b0bb.mp4" target="_blank" rel="noreferrer">单独打开视频</a>
+            </div>
+          </article>
+
+          <article class="archive-card" data-reveal>
+            <span class="card-tag">Video 2026</span>
+            <h3>归档视频 02</h3>
+            <p>新增归档的第二个本地视频素材，同样保留在线播放和独立打开入口，方便继续沉淀演示记录。</p>
+            <div class="archive-media">
+              <video controls preload="metadata" playsinline>
+                <source src="./static/video/2025/1074_0bc3k7ldsmyab4amja4sinutevyehe2abaca.f0.mp4" type="video/mp4">
+                当前浏览器不支持视频播放，请尝试升级到现代浏览器。
+              </video>
+            </div>
+            <div class="card-actions">
+              <a class="btn btn-primary" href="./static/video/2025/1074_0bc3k7ldsmyab4amja4sinutevyehe2abaca.f0.mp4" target="_blank" rel="noreferrer">单独打开视频</a>
+            </div>
+          </article>
+
+          <article class="archive-card archive-card-empty" data-reveal>
+            <span class="card-tag">Next Slot</span>
+            <h3>更多内容</h3>
+            <p>后面若继续新增视频、截图、文档或压缩包，也可以继续按相同网格方式统一管理。</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Archive page stores video materials in a grid layout for future expansion.</p>
+    </footer>
+  </div>
+
+  <script src="./static/js/jquery.min.js"></script>
+  <script src="./static/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>留言板 | 刘春松</title>
+  <meta name="description" content="支持 GitHub PKCE 登录接入的纯前端留言板页面，基于静态 HTML 页面结构搭建。">
+  <link rel="stylesheet" href="./static/css/style.css">
+</head>
+<body>
+  <div id="ie-tip-anchor"></div>
+
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="./index.html">
+        <span class="brand-mark"></span>
+        <span class="brand-text">
+          <strong>Liu Chunsong</strong>
+          <em>Guestbook Signal</em>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="切换导航">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav">
+        <a href="./index.html">首页</a>
+        <a href="./about.html">关于</a>
+        <a href="./works.html">作品</a>
+        <a href="./links.html">链接</a>
+        <a href="./navigation.html">导航</a>
+        <a href="./contact.html">联系</a>
+        <a href="./archive.html">归档</a>
+        <a href="./guestbook.html">留言板</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="page-hero-copy" data-reveal>
+          <p class="eyebrow">Guestbook Protocol</p>
+          <h1>纯前端 GitHub 登录留言板</h1>
+          <p>
+            这页现在按纯前端 GitHub PKCE 方式改好了。
+            你只要填 GitHub OAuth App 的 `client_id`，再把回调地址配好，就能在静态站里跑完整授权流程。
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#guestbook-auth">开始配置</a>
+            <a class="btn btn-secondary" href="./links.html">先看其他链接</a>
+          </div>
+        </div>
+
+        <div class="page-hero-panel info-card" data-reveal>
+          <span class="card-tag">How It Works</span>
+          <h2>接入方式</h2>
+          <ul class="list-clean list-spaced">
+            <li>页面前端：当前静态 HTML + CSS + JavaScript</li>
+            <li>登录方式：GitHub OAuth Authorization Code + PKCE</li>
+            <li>数据存储：浏览器 localStorage 本地持久化</li>
+            <li>当前状态：已接入纯前端 PKCE 结构与回调页</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section-block">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Auth & Session</p>
+          <h2 id="guestbook-auth">登录区</h2>
+          <p>这里会显示 GitHub OAuth 配置状态、登录入口、当前登录用户信息和退出按钮。</p>
+        </div>
+
+        <div class="details-grid guestbook-layout">
+          <article class="info-card guestbook-auth-card" data-reveal>
+            <span class="card-tag">GitHub Auth</span>
+            <h3>登录控制台</h3>
+            <p class="guestbook-note" id="guestbook-config-status">正在检查 GitHub OAuth 配置...</p>
+
+            <div class="guestbook-auth-actions">
+              <button class="btn btn-primary" type="button" id="guestbook-login-btn">GitHub 登录</button>
+              <button class="btn btn-secondary" type="button" id="guestbook-logout-btn" disabled>退出登录</button>
+            </div>
+
+            <div class="guestbook-user" id="guestbook-user-card">
+              <div class="guestbook-avatar">GH</div>
+              <div class="guestbook-user-copy">
+                <strong id="guestbook-user-name">未登录</strong>
+                <span id="guestbook-user-meta">登录后会显示 GitHub 用户名与头像</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="info-card" data-reveal>
+            <span class="card-tag">Setup Guide</span>
+            <h3 id="guestbook-setup-title">你要填的关键值</h3>
+            <div class="guestbook-note" id="guestbook-setup-desc">
+              当前是配置引导态，填完后这里会自动切成“已配置”状态摘要。
+            </div>
+            <ol class="list-clean list-spaced guestbook-steps" id="guestbook-setup-list">
+              <li>GitHub -> `Settings` -> `Developer settings` -> `OAuth Apps`</li>
+              <li>创建一个 OAuth App，拿到 `Client ID`</li>
+              <li>把 `Client ID` 填进 `static/js/github-config.js`</li>
+              <li>回调地址填当前站点的 `github-callback.html`</li>
+              <li>前端只填 `client_id`，不要把 `client_secret` 放进页面</li>
+            </ol>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-block">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Compose Message</p>
+          <h2>发布留言</h2>
+          <p>登录后可直接发留言；由于当前是纯前端静态站，留言会保存在当前浏览器的 localStorage 中。</p>
+        </div>
+
+        <article class="info-card guestbook-composer" data-reveal>
+          <span class="card-tag">Post Message</span>
+          <h3>留言输入框</h3>
+          <form id="guestbook-form">
+            <label class="guestbook-label" for="guestbook-message">想说点什么</label>
+            <textarea
+              id="guestbook-message"
+              class="guestbook-textarea"
+              placeholder="写下一句留言、合作意向、使用反馈或者一句路过打卡..."
+              rows="5"
+            ></textarea>
+            <div class="guestbook-form-meta">
+              <span id="guestbook-form-status">未配置 GitHub OAuth 时，会先显示演示状态。</span>
+              <button class="btn btn-primary" type="submit" id="guestbook-submit-btn">发布留言</button>
+            </div>
+          </form>
+        </article>
+      </section>
+
+      <section class="section-block">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Message Stream</p>
+          <h2>留言列表</h2>
+          <p id="guestbook-message-hint">未完成 GitHub 配置前会显示演示卡片；配置完成后会切换为当前浏览器下的真实留言列表。</p>
+        </div>
+
+        <div class="guestbook-messages" id="guestbook-messages" data-reveal></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Guestbook page is prepared for GitHub PKCE login and browser-local message storage.</p>
+    </footer>
+  </div>
+
+  <script src="./static/js/jquery.min.js"></script>
+  <script src="./static/js/main.js"></script>
+  <script src="./static/js/github-config.js"></script>
+  <script type="module" src="./static/js/guestbook.js"></script>
+</body>
+</html>

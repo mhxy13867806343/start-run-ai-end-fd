@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>刘春松 | 前端与 AI 应用开发</title>
+  <meta
+    name="description"
+    content="刘春松个人站首页，使用原生 HTML、CSS、JavaScript 与 jQuery 构建的炫酷响应式多页站点。"
+  >
+  <link rel="stylesheet" href="./static/css/style.css">
+</head>
+<body>
+  <div id="ie-tip-anchor"></div>
+
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="./index.html">
+        <span class="brand-mark"></span>
+        <span class="brand-text">
+          <strong>Liu Chunsong</strong>
+          <em>Frontend / AI Builder</em>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="切换导航">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav">
+        <a href="./index.html">首页</a>
+        <a href="./about.html">关于</a>
+        <a href="./works.html">作品</a>
+        <a href="./links.html">链接</a>
+        <a href="./navigation.html">导航</a>
+        <a href="./contact.html">联系</a>
+        <a href="./archive.html">归档</a>
+        <a href="./guestbook.html">留言板</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="hero-orbit hero-orbit-a" data-parallax="22"></div>
+        <div class="hero-orbit hero-orbit-b" data-parallax="36"></div>
+        <div class="hero-grid"></div>
+
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow">HTML x jQuery x Resume Portal</p>
+          <h1>刘春松的多页面作品入口，终于不再只是一张单页海报。</h1>
+          <p class="hero-lead">
+            这里把简历里真实可见的信息重新组织成完整站点：
+            关于我、作品入口、常用链接、联系方式与双通道二维码，统一放进一个更适合展示的霓虹空间。
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="./works.html">先看作品</a>
+            <a class="btn btn-secondary" href="./about.html">了解我</a>
+          </div>
+
+          <ul class="hero-stats">
+            <li>
+              <strong>Vue / React</strong>
+              <span>前端开发栈</span>
+            </li>
+            <li>
+              <strong>AI Tools</strong>
+              <span>DeepSeek / ChatGPT / Gemini</span>
+            </li>
+            <li>
+              <strong>Static Multi-Page</strong>
+              <span>原生站点直开</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-panel" data-reveal>
+          <div class="glass-card pulse-card">
+            <span class="card-tag">Resume Signal</span>
+            <h2>前端 / AI 应用开发方向</h2>
+            <p>
+              根据简历内容重构首页信息层级，突出技术方向、可访问链接、作品入口与联系方式，
+              让整个站点从单页升级成一个可继续扩展的个人门户。
+            </p>
+          </div>
+
+          <div class="signal-stack">
+            <article class="mini-card">
+              <span>01</span>
+              <h3>真实资料入站</h3>
+              <p>邮箱、博客、GitHub、站点与项目入口都来自现有简历文件，不再只停留在视觉展示。</p>
+            </article>
+            <article class="mini-card">
+              <span>02</span>
+              <h3>多页结构补齐</h3>
+              <p>新增关于、作品、链接、联系等页面，导航完整，内容之间互相可跳转。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature-strip" id="highlights">
+        <article class="feature" data-reveal>
+          <span class="feature-index">A</span>
+          <h3>技术方向</h3>
+          <p>聚焦前端开发与 AI 应用开发，覆盖 Vue、React、TypeScript、HTML5、CSS3 与多端适配。</p>
+        </article>
+        <article class="feature" data-reveal>
+          <span class="feature-index">B</span>
+          <h3>常用工具链</h3>
+          <p>WebStorm、HBuilderX、FinalShell、Vite、Webpack、Git、Node.js 组成常规开发组合。</p>
+        </article>
+        <article class="feature" data-reveal>
+          <span class="feature-index">C</span>
+          <h3>兼容性引导</h3>
+          <p>站点持续保留 IE 浏览器顶部提示，在旧浏览器环境下推荐用户切换到 Chrome 或 Edge。</p>
+        </article>
+      </section>
+
+      <section class="portal section-block">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Portal Map</p>
+          <h2>把缺少的页面补齐</h2>
+          <p>首页之外，现在还提供关于我、作品、链接、联系四个入口，每页都可独立访问。</p>
+        </div>
+
+        <div class="portal-grid">
+          <a class="portal-card" href="./about.html" data-reveal>
+            <span class="card-tag">About</span>
+            <h3>关于我</h3>
+            <p>查看个人信息、技术方向、常用工具、技能总结与跨平台经验。</p>
+          </a>
+          <a class="portal-card" href="./works.html" data-reveal>
+            <span class="card-tag">Works</span>
+            <h3>作品入口</h3>
+            <p>收纳简历中已有项目与线上站点入口，作为当前可公开访问的展示集合。</p>
+          </a>
+          <a class="portal-card" href="./links.html" data-reveal>
+            <span class="card-tag">Links</span>
+            <h3>链接收藏</h3>
+            <p>集中放置博客、个人网站、GitHub、简历 PDF 和其他外部可访问资源。</p>
+          </a>
+          <a class="portal-card" href="./navigation.html" data-reveal>
+            <span class="card-tag">Navigation</span>
+            <h3>第三方导航</h3>
+            <p>按 AI、npm、学习资料等分类整理常用第三方站点，方便统一跳转。</p>
+          </a>
+          <a class="portal-card" href="./contact.html" data-reveal>
+            <span class="card-tag">Contact</span>
+            <h3>联系方式</h3>
+            <p>保留二维码、邮箱、电话与外链方式，适合快速扫码或直接联系。</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="gallery" id="gallery">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Scan Identity</p>
+          <h2>双通道数字名片</h2>
+          <p>使用 jQuery 切换不同二维码预览，并为当前卡片增加聚焦光效。</p>
+        </div>
+
+        <div class="gallery-layout">
+          <div class="gallery-stage" data-reveal>
+            <div class="preview-frame">
+              <img
+                id="preview-image"
+                src="./static/image/wx/e5298189e154199ce1dc5aa20dfb8a25.jpg"
+                alt="微信二维码名片预览"
+              >
+              <div class="preview-glow"></div>
+            </div>
+          </div>
+
+          <div class="gallery-aside">
+            <button
+              class="channel-card is-active"
+              type="button"
+              data-image="./static/image/wx/e5298189e154199ce1dc5aa20dfb8a25.jpg"
+              data-alt="微信二维码名片预览"
+              data-name="微信频道"
+              data-desc="扫描后可添加好友，适合移动端快速触达。"
+              data-reveal
+            >
+              <span class="channel-badge">Wechat</span>
+              <strong>微信频道</strong>
+              <p>适合快速建立联系，与联系页、外链页形成互补入口。</p>
+            </button>
+
+            <button
+              class="channel-card"
+              type="button"
+              data-image="./static/image/qq/3cf8c4bc532a4c4f8ca818ee3ced2716.jpg"
+              data-alt="QQ二维码名片预览"
+              data-name="QQ 频道"
+              data-desc="渐变蓝紫点阵二维码，适合强化视觉冲击与品牌氛围。"
+              data-reveal
+            >
+              <span class="channel-badge">QQ</span>
+              <strong>QQ 频道</strong>
+              <p>延续未来感视觉语言，适合作为个人门户中的第二联系方式。</p>
+            </button>
+
+            <div class="channel-meta" data-reveal>
+              <h3 id="channel-name">微信频道</h3>
+              <p id="channel-desc">扫描后可添加好友，适合移动端快速触达。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="launch" id="launch">
+        <div class="launch-copy" data-reveal>
+          <p class="eyebrow">Resume Assets</p>
+          <h2>简历文件、作品入口和联系通道都已经接进来。</h2>
+          <p>
+            这套站点仍然保持纯静态交付，但内容维度更完整。
+            你现在可以直接查看 PDF 简历、访问外链站点、浏览作品页，或者进入联系页扫码。
+          </p>
+        </div>
+
+        <div class="launch-actions" data-reveal>
+          <a class="btn btn-primary" href="./links.html">查看全部链接</a>
+          <a class="btn btn-secondary" href="./contact.html">进入联系页</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Static multi-page portfolio powered by HTML, CSS, JavaScript and jQuery.</p>
+    </footer>
+  </div>
+
+  <script src="./static/js/jquery.min.js"></script>
+  <script src="./static/js/main.js"></script>
+</body>
+</html>

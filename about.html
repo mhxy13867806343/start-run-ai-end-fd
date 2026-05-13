@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>关于我 | 刘春松</title>
+  <meta name="description" content="刘春松的个人信息、技能总结、技术方向与工具链。">
+  <link rel="stylesheet" href="./static/css/style.css">
+</head>
+<body>
+  <div id="ie-tip-anchor"></div>
+
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="./index.html">
+        <span class="brand-mark"></span>
+        <span class="brand-text">
+          <strong>Liu Chunsong</strong>
+          <em>About Me</em>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="切换导航">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav">
+        <a href="./index.html">首页</a>
+        <a href="./about.html">关于</a>
+        <a href="./works.html">作品</a>
+        <a href="./links.html">链接</a>
+        <a href="./navigation.html">导航</a>
+        <a href="./contact.html">联系</a>
+        <a href="./archive.html">归档</a>
+        <a href="./guestbook.html">留言板</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="page-hero-copy" data-reveal>
+          <p class="eyebrow">About Profile</p>
+          <h1>关于我</h1>
+          <p>
+            从简历第一页可见信息来看，我的技术方向是前端开发与 AI 应用开发，
+            长期围绕响应式、跨端适配、组件化、性能优化与工程化工具链展开工作。
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="./works.html">去看作品</a>
+            <a class="btn btn-secondary" href="./contact.html">联系我</a>
+          </div>
+        </div>
+
+        <div class="page-hero-panel info-card" data-reveal>
+          <span class="card-tag">Profile Snapshot</span>
+          <h2>基本信息</h2>
+          <ul class="list-clean">
+            <li><strong>姓名：</strong>刘春松</li>
+            <li><strong>电话：</strong>18072783978</li>
+            <li><strong>邮箱：</strong><a href="mailto:869710179@qq.com">869710179@qq.com</a></li>
+            <li><strong>方向：</strong>前端 / AI 应用开发</li>
+            <li><strong>系统：</strong>macOS M1</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section-block">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Skill Summary</p>
+          <h2>技能总结</h2>
+          <p>这里拆成前端与后端 Python 两类，通过切换查看不同方向的技能结构。</p>
+        </div>
+
+        <div class="skill-switcher" data-reveal>
+          <button class="skill-toggle is-active" type="button" data-skill-tab="frontend">前端</button>
+          <button class="skill-toggle" type="button" data-skill-tab="backend">后端 Python</button>
+        </div>
+
+        <div class="skill-panel is-active" data-skill-panel="frontend">
+          <div class="details-grid">
+            <article class="info-card" data-reveal>
+              <span class="card-tag">Frontend Stack</span>
+              <h3>核心栈</h3>
+              <div class="stack-tags">
+                <span>Vue.js 3.x / 2.x</span>
+                <span>Uniapp</span>
+                <span>React Hooks</span>
+                <span>TypeScript</span>
+                <span>JavaScript ES6+</span>
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>Sass / Less</span>
+              </div>
+            </article>
+
+            <article class="info-card" data-reveal>
+              <span class="card-tag">Build Tools</span>
+              <h3>开发工具</h3>
+              <div class="stack-tags">
+                <span>WebStorm</span>
+                <span>HBuilderX</span>
+                <span>FinalShell</span>
+                <span>Vite</span>
+                <span>Webpack</span>
+                <span>Git</span>
+                <span>Node.js</span>
+              </div>
+            </article>
+
+            <article class="info-card" data-reveal>
+              <span class="card-tag">AI Toolbox</span>
+              <h3>AI 工具集</h3>
+              <div class="stack-tags">
+                <span>DeepSeek</span>
+                <span>ChatGPT</span>
+                <span>Windsurf</span>
+                <span>Grok</span>
+                <span>Gemini</span>
+              </div>
+            </article>
+
+            <article class="info-card" data-reveal>
+              <span class="card-tag">Experience</span>
+              <h3>经验侧重点</h3>
+              <ul class="list-clean list-spaced">
+                <li>前端开发全流程</li>
+                <li>响应式与跨端适配</li>
+                <li>性能优化与组件化</li>
+                <li>H5、PC 大屏、微信小程序、App(Hybrid/Uniapp)</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+
+        <div class="skill-panel" data-skill-panel="backend">
+          <div class="details-grid">
+            <article class="info-card" data-reveal>
+              <span class="card-tag">Python Stack</span>
+              <h3>核心栈</h3>
+              <div class="stack-tags">
+                <span>Python</span>
+                <span>FastAPI</span>
+                <span>Django</span>
+                <span>Flask</span>
+                <span>REST API</span>
+                <span>SQLAlchemy</span>
+                <span>Pydantic</span>
+                <span>AsyncIO</span>
+              </div>
+            </article>
+
+            <article class="info-card" data-reveal>
+              <span class="card-tag">Backend Tools</span>
+              <h3>服务端工具</h3>
+              <div class="stack-tags">
+                <span>PyCharm / VS Code</span>
+                <span>Poetry / Pip</span>
+                <span>MySQL / PostgreSQL</span>
+                <span>Redis</span>
+                <span>Docker</span>
+                <span>Nginx</span>
+                <span>Linux</span>
+              </div>
+            </article>
+
+            <article class="info-card" data-reveal>
+              <span class="card-tag">AI Backend</span>
+              <h3>Python AI 方向</h3>
+              <div class="stack-tags">
+                <span>OpenAI API</span>
+                <span>LangChain</span>
+                <span>RAG</span>
+                <span>爬虫与数据清洗</span>
+                <span>自动化脚本</span>
+                <span>任务调度</span>
+              </div>
+            </article>
+
+            <article class="info-card" data-reveal>
+              <span class="card-tag">Experience</span>
+              <h3>后端经验侧重点</h3>
+              <ul class="list-clean list-spaced">
+                <li>Python Web 服务开发与接口封装</li>
+                <li>数据处理、脚本自动化与定时任务</li>
+                <li>数据库建模、缓存接入与部署联调</li>
+                <li>AI 应用后端接入与工具链整合</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>About page assembled from visible resume details and connected site entries.</p>
+    </footer>
+  </div>
+
+  <script src="./static/js/jquery.min.js"></script>
+  <script src="./static/js/main.js"></script>
+</body>
+</html>
