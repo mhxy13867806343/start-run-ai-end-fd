@@ -9,7 +9,7 @@
 
   window.GITHUB_OAUTH_CONFIG = {
     clientId: "0v23lixaPD32110Wqvp9",
-    redirectUri: redirectUri,
+    redirectUri: "https://mhxy13867806343.github.io/start-run-ai-end-fd/github-callback.html",
     scope: "read:user user:email"
   };
 })();
